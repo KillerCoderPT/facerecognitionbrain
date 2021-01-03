@@ -24,7 +24,7 @@ class SignIn extends React.Component {
 
     // Function when form is submited
     onSubmitSignIn = () => {
-        fetch('http://localhost:3000/signin', {
+        fetch('https://salty-tundra-93642.herokuapp.com/signin', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
