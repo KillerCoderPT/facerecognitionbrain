@@ -22,7 +22,7 @@ class Register extends React.Component {
     }
 
     onSubmitRegister = () => {
-        fetch('https://salty-tundra-93642.herokuapp.com/register', {
+        fetch('http://localhost:3000/register', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -53,7 +53,7 @@ class Register extends React.Component {
                                 <label className="db fw6 lh-copy f5" htmlFor="name">Name</label>
                                 <input 
                                     onChange={this.onNameChange}
-                                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+                                    className="hover-black pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
                                     type="text" 
                                     name="name" 
                                     id="name"
@@ -63,7 +63,7 @@ class Register extends React.Component {
                                 <label className="db fw6 lh-copy f5" htmlFor="email-address">Email</label>
                                 <input 
                                     onChange={this.onEmailChange}
-                                    className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                                    className="hover-black pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
                                     type="email" 
                                     name="email-address" 
                                     id="email-address"
@@ -73,7 +73,7 @@ class Register extends React.Component {
                                 <label className="db fw6 lh-copy f5" htmlFor="password">Password</label>
                                 <input 
                                     onChange={this.onPasswordChange}
-                                    className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+                                    className="hover-black b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
                                     type="password" 
                                     name="password" 
                                     id="password"
